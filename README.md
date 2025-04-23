@@ -1,4 +1,4 @@
- ProtoMotions-Extended-Terrain-Demos
+### ProtoMotions-Extended-Terrain-Demos
 
 This repository extends NVIDIA's ProtoMotions framework with custom terrain implementations and demo scripts for physics-based character animation. It focuses on demonstrating the MaskedMimic algorithm for humanoid robot navigation in various environments.
 
