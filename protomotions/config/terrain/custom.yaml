@@ -1,0 +1,21 @@
+# @package _global_
+
+defaults:
+  - flat
+
+terrain:
+  _target_: protomotions.envs.base_env.env_utils.terrains.slope.SlopeTerrain
+  config:
+    # Very minimal configuration
+    num_terrains: 1
+    num_levels: 1
+    terrain_proportions: [ 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ]
+    # Reduced dimensions but preserved observation size
+    map_length: 10.0
+    map_width: 10.0
+    border_size: 5.0
+    # Must match the pretrained model's expected inputs
+    num_samples_per_axis: 16  # Changed back to 16 to match model expectations
+    horizontal_scale: 0.2
+    vertical_scale: 0.002
+    minimal_humanoid_spacing: 5
